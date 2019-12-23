@@ -249,7 +249,8 @@ input, select, textarea {
 	}
 
 	video::-webkit-media-controls-panel {
-	  background-image: linear-gradient(transparent, transparent) !important;
+	  
+	  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.2)) !important;
 	}
 
 /* Container */
