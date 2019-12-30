@@ -15,7 +15,7 @@ pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
+form, label, legend, tab, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
@@ -182,6 +182,10 @@ input, select, textarea {
 		font-size: 0.7em;
 		line-height: 1.5em;
 	}
+
+	p.tab { margin-left: 25px; }
+	p.doubletab { margin-left: 50px; }
+	p.tripletab { margin-left: 75px; }
 
 	sub {
 		font-size: 0.8em;
@@ -2169,6 +2173,31 @@ input, select, textarea {
 		ol li {
 			padding-left: 0.25em;
 		}
+
+	ol.paren {
+		list-style-type: none;
+	}
+
+		ol li.paren:before {
+			content: "(" counter(section, decimal) ") ";
+		}
+
+		li.paren { 
+			counter-increment: section;
+		}
+
+	ol.sq-paren {
+		list-style-type: none;
+	}
+
+		ol li.sq-paren:before {
+			content: "[" counter(section, decimal) "] ";
+		}
+
+		li.sq-paren { 
+			counter-increment: section;
+		}
+
 
 	ul {
 		list-style: disc;
