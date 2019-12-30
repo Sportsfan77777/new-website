@@ -2198,6 +2198,18 @@ input, select, textarea {
 			counter-increment: section;
 		}
 
+	ol.letters {
+		list-style-type: none;
+	}
+
+		ol li.letters:before {
+			content: "(" counter(section, decimal) ") ";
+		}
+
+		li.letters { 
+			counter-increment: section;
+		}
+
 
 	ul {
 		list-style: disc;
