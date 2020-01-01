@@ -31,7 +31,7 @@
 				    <p element style="margin-top:-10px"><strong>Table of Contents</strong>
 				    	<ul element style="margin-top:-25px; margin-bottom:-35px">
 				    		<li>Section 1 (<i>Cornell: 2014-15</i>): Keeping inclined circumbinary planets stable.</li>
-				    		<li>Section 2 (<i>Leiden: Summer 2014</i>): Transferring disks during stellar flybys.</li>
+				    		<li>Section 2 (<i>Leiden: Summer 2014</i>): Transferring debris disk material during stellar flybys.</li>
 				    		<li>Section 3 (<i>Harvard: Summer 2013</i>): Connecting solar energetic particles with coronal shock waves.</li>
 				    		<li>Section 4 (<i>Cornell: 2011-12</i>): Reducing sub-mm data.</li>
 				    	</ul>
@@ -49,8 +49,28 @@
 				<!-- Two -->
 					<section id="two">
 					<header class="major">
-						<h2>Transferring disks during stellar flybys.</h2>
+						<h2>Transferring debris disk material during stellar flybys.</h2>
 					</header>
+
+					<p element style="margin-top:-5px">
+			          <strong>MNRAS paper #1 (04/2016): </strong><a href="https://ui.adsabs.harvard.edu/abs/2016MNRAS.457.4218J/abstract" target="_blank">Mass transfer between debris discs during close stellar encounters</a><br>
+			          <strong>MNRAS paper #2 (11/2015): </strong><a href="https://ui.adsabs.harvard.edu/abs/2015MNRAS.453.3157J/abstract" target="_blank">How Sedna and family were captured in a close encounter with a solar sibling</a><br>
+			          </p>
+
+			        <p element style="margin-top:-25px">
+			          <strong>LEAPS Symposium presentation: </strong><a href="https://drive.google.com/file/d/1PRssOTr4zRuRbfazjKGfiBfhsgd7CRcm/view?usp=sharing">LEAPS.pptx</a>, <a href="https://drive.google.com/file/d/1r2FJm-TN4gaabyjifFe3TiBbghXK5fZQ/view?usp=sharing" target="_blank">PDF Version</a><br>
+      				  <strong>AAS 225 poster: </strong><a href="https://drive.google.com/file/d/1Qhj9C6HX84kbsa-ljnQnk7NW33r9kFtV/view?usp=sharing" target="_blank">PDF Version</a><br>
+			        </p>
+
+			        <p element style="margin-top:-25px">
+			          <strong>Scientific American article: </strong><a href="https://www.scientificamerican.com/article/sun-accused-of-stealing-planetary-objects-from-another-star/"><i>Sun Accused of Stealing Planetary Objects from Another Star</i></a>
+			        </p>
+
+			        <p>When you go to sleep at night, do you worry about the possibility of another star passing too close to the Sun and disrupting our solar system? Relax. There is no chance that will happen, at least not today. However, a long time ago when the Sun was very young, a stellar flyby like that may have been plausible if not probable. The Sun, like all stars, was born in a cluster made up of many young stars that were not very apart from each other compared to the solar neighborhood today. Certainly, some other star must have passed by near the Sun. It is just a question of what type of star (in terms of mass) and how close did it get?</p>
+
+			        <p element style="margin-top:-20px">Other studies (most notably <a href="https://ui.adsabs.harvard.edu/abs/2011A%26A...532A.120L/abstract">Lestrade et al. 2011</a> at the time) had investigated to what extent flyby stars could disrupt the debris disk around the Sun or another star while they were still young enough to reside in their birth clusters. They found that flybys were a threat to deplete a signifcant fraction of a star's debris disk material provided that the number density of stars in the cluster was reasonably high (comparable to the Orion cluster).</p>
+
+			        <p element style="margin-top:-20px">What happens to all of that lost debris disk material? After realizing that we didn't know, we started to do our own flyby simulations using an N-body integrator in the <a href="https://amusecode.github.io/">AMUSE</a> package. Let's take a look at what happens below in two movies where the Sun in flying past and disrupting a star with a debris disk:</p>
 
 					<center>
 			        <video width="40%", controls>
@@ -65,6 +85,27 @@
 			           Your browser does not support HTML5 video.
 			        </video>
 			        </center>
+			        <p element style="margin-top:-30px"><center><font face="Arial" size=2.8>
+				          <i><strong>Left:</strong> A stellar encounter! The Sun is in motion.
+				          <strong>Right:</strong>  Here in a different view, the Sun is at the center.
+				          </i>
+				        </font></center></p>
+
+			        <p>As you can see in the movie, not all of the material that becomes unbound is completely lost. Some of it becomes bound to the other star. This means that stellar flybys are capable of transferring objects in a debris disk (think planetesimal-sized!) from one star to another! We conducted a parameter study in which simulated a wide variety of flybys with different stellar masses and distances of closest approach in order to determine how close different types of stars needed to get to transfer objects to the other star. I found that the lowest mass stars can transfer objects at distances of up to 400 AU (see first panel of figure below).</p>
+
+			        <center>
+					<p><a style="border-bottom-color: transparent;" href="images/undergraduate-research/transferRates.png"><img src="images/undergraduate-research/transferRates.png" width="30%">&nbsp&nbsp&nbsp 
+					<a style="border-bottom-color: transparent;" href="images/undergraduate-research/annotated-disk-and-fractions.png"><img src="images/undergraduate-research/annotated-disk-and-fractions.png" width="60%"></a></p></center>
+					<p element style="margin-top:-30px"><center><font face="Arial" size=2.8>
+			          <i>
+			          <strong>Left:</strong> Percentages of the flyby star's disk that transfers to the Sun's disk for different masses of the flyby star and different distances of closest approach for the flyby orbit. <strong>Right: </strong> Diagram that illustrates where the transferred objects (and retained objects, as well as unbound objects) originated in the disk.
+			          </i>
+			        </font></center></p>
+
+
+			        <p>Another more specific question we could ask is: What happens to the transferred objects? If you go back to the movies at the beginning, you will notice that the vast majority of transferred objects all end up on one side of the star. (In technical terms, most of the transferred objects have a narrow clustering in their arguments of pericenter.) A similar pattern in the arguments of pericenter has been observed in the Sedna family of objects in our solar system (which has since been suggested as evidence for a yet-to-be discovered Planet Nine). Could this pattern be explained if the Sedna family of objects were transferred from another star? It is possible; however, we would need an additional mechanism to explain why the precession of the objects' orbits didn't break up this pattern over the last few billion years.</p>
+
+			        <p element style="margin-top:-20px">Another application of this pattern might be to look for "lopsided" debris disks around other stars. If these disks have too much material on one side of the star (in other words, a family of objects with a clustering in the argument of pericenter), that may be evidence that the star captured these objects from another star during a flyby.</p>
 
 					</section>
 
