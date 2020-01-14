@@ -123,11 +123,11 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
-		a.special {
+		a.specialty {
 			color: #3366BB;
 		}
 
-		a.special:hover {
+		a.specialty:hover {
 			border-bottom-color: transparent;
 			color: #3366BB !important;
 			text-decoration: none;
