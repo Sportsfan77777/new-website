@@ -123,6 +123,16 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
+		a.special {
+			color: #3366BB;
+		}
+
+		a.special:hover {
+			border-bottom-color: transparent;
+			color: #3366BB !important;
+			text-decoration: none;
+		}
+
 	strong {
 		color: #787878;
 		font-weight: 400; /* was 400 */
