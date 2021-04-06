@@ -227,7 +227,9 @@
 				          </i>
 				        </font></center></p>
 
-				        <p>Above, you can see that the elongated vortex (right) lacks a vorticity minimum and a series of smooth elliptical contours, the two main features of a concentrated vortex (left) that make it straightfoward for the vortex to trap dust in its center. Instead, <b>the elongated vortex has a much flatter pressure bump across the majority of the vortex. As a result, it doesn't have a reason to trap dust at its center.</b> Where does the dust go instead?</p>
+				        <p>Above, you can see that the total vortex lifetimes are longer for lower-mass planets, even though the lifetimes of the initial vortices do not depend on the planet mass. What is going on? These patterns occur for a few separate reasons. First, in the low viscosity cases, shocks are responsible for killing each vortex. The strength of the shocks increases with higher Mach numbers, hence vortices in discs with low scale height decay much faster while vortices in discs with very high scale heights seemingly never decay.</p> 
+
+				        <p>Yet, some of the total lifetimes in the low scale height cases are longer than others. Why? With lower-mass planets, the vortex can re-form, as you can see below with a sub-Saturn-mass planet!</p>
 
 				        <center>
 				        <video width="45%", controls>
@@ -244,39 +246,45 @@
 				        </center>
 				        <p element style="margin-top:-30px"><center><font face="Arial" size=2.8>
 				          <i>
-				          <strong>Left:</strong> Snapshot showing dust circulation in an elongated vortex.
-				          <strong>Right:</strong> Movie showing dust circulation.
+				          <strong>Left:</strong> Evolution of the gas density.
+				          <strong>Right:</strong> Evolution of the radial profiles of the density and the vortensity (the RWI critical function).
 				          </i>
 				        </font></center></p>
 
-				        <p>As the figure and movie above both show, the elongated vortex still easily traps dust. But instead of ending up at the center, <b>the dust <i>circulates</i> around the vortex!</b> As a result, elongated vortices are just about as elongated in the dust as they are in the gas. Another key signature of these vortices is that <b>the peak dust concentration is typically located off-center</b>, often by more than 30 degrees! Below, let's compare synthetic images of both concentrated and elongated vortices to the ALMA image of HD 135344B at the top of the page.</p>
+				        <p>As the density movie shows, the vortex re-forms three times (at t = 2600, 3150, and 3660 orbits). Although they may appear short-lived, the vortex is still alive at the end of this movie. Even though there is hardly any azimuthal contrast in the gas, there would still be a significant contrast in the dust from the point when the first vortex forms through the entire rest of the movie. Why do these vortices re-form? In order for a vortex to re-form, there must be a sharp bump in the crticial function shown in the radial profiles. Interestingly, after the initial vortex spreads into a ring, a new subtle bump in the critical function forms not at the pressure bump, but several scale heights inside the pressure bump. This subtle bump is able to trigger a new vortex at the pressure bump, but only because the separation isn't that large. If the planet were more massive, the subtle bump would be located in the same place while the pressure bump would be further away from the planet. As a result, a Jupiter-mass planet would not be able to re-trigger a vortex.</p>
+
+				        <p>If you look at the vortex total dust lifetimes again though, the vortices in discs with large scale height also "live longer" with lower planet masses. The reason is an entirely different pathway shown below.</p>
 
 				        <center>
-						<p><a style= "border-bottom-color: transparent;" href="images/research/concentrated_and_elongated_vortex_synthetic_images.png"><img src="images/research/concentrated_and_elongated_vortex_synthetic_images.png" width="90%"></a></p>
+				        <video width="44%", controls>
+				         <source src="movies/h08-new-pathway.mp4" type="video/mp4">
+				         <source src="movies/h08-new-pathway.ogg" type="video/ogg">
+				           Your browser does not support HTML5 video.
+				        </video>
+				        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<a style= "border-bottom-color: transparent;" href="images/research/new-pathway-averagedDensity.png"><img src="images/research/new-pathway-averagedDensity.png" width="46%"></a>
 						</center>
 
 						<p element style="margin-top:-30px"><center><font face="Arial" size=2.8>
 				          <i>
-				          <strong>Left:</strong> Synthetic image of a concentrated vortex, with a similar beam size to that from the HD 135344B image.
-				          <strong>Right:</strong> Synthetic image of an elongated vortex, with the same beam size.
+				          <strong>Left:</strong> Evolution of gas density in a disc with H/R = 0.08. Eventually at t = 3900 orbits, the initial vortex migrates outward and a second vortex forms in its place. The second vortex then decays, leaving only the initial vortex, but at a much larger separation.<br>
+				          <strong>Right:</strong> Radial density profiles at key points. The initial vortex starts to migrate outwards once the initial pressure bump has been depleted by the vortex itself.
 				          </i>
 				        </font></center></p>
 
-						<p>The image on the right above does a better job at reproducing the elongated extent of the crescent in HD 13544B. Unlike the concentrated vortex, it also has an off-center peak, just like the crescent from that real ALMA image. These two signatures make the asymmetry in HD 13544B an excellent elongated planet-induced vortex candidate.</p>
+						<p>In the H/R = 0.08 cases with a high disc mass, the vortex never stops growing. Eventually, it grows enough to transition from elongated (minimum Rossby number > -0.15) to compact (minimum Rossby number < -0.15), where what separates these two states is the Rossby number of the vortex moreso than the extent. Furthermore, the compact vortex has much stronger spiral waves that can cause the vortex to lose angular momentum and shrink until the initial pressure bump depletes. After the pressure bump disappears, the vortex migrates outwards towards the new pressure bump. Meanwhile, a second vortex forms near the planet where a new bump in the critical function arose. This process happens much slower with less massive planets, allowing the initial vortex to stay where it formed for much longer (albeit, the initial vortex survives for at least 10000 orbits regardless of planet mass, just not near the planet).</p>
 
-				        <p><i><b>Bonus:</b> What beam diameter do I need to detect signatures of elongated vortices?</i></p>
-				    	<p element style="margin-top:-20px"><i>That's a good question. The figure below shows a comparison of synthetic images of the same snapshot of an elongated vortex with three different beam sizes: half the planet's semimajor axis, equal to the planet's semimajor axis, and one and a half times the planet's semimajor axis (equivalent to about the vortex's semimajor axis). The first two beam sizes seem sufficient for a face-on disk, while the last one is not good enough. (That statement is quantified in the paper.)</i></p>
+						<p>Models for the two types of vortices are shown below.</p>
 
 				    	<center>
-						<p><a style= "border-bottom-color: transparent;" href="images/research/elongated_vortex-beam010.png"><img src="images/research/elongated_vortex-beam010.png" width="30%"></a>
-						<a style= "border-bottom-color: transparent;" href="images/research/elongated_vortex-beam020.png"><img src="images/research/elongated_vortex-beam020.png" width="30%"></a>
-						<a style= "border-bottom-color: transparent;" href="images/research/elongated_vortex-beam030.png"><img src="images/research/elongated_vortex-beam030.png" width="30%"></a></p>
+						<p><a style= "border-bottom-color: transparent;" href="images/research/vortex-model-compact.png"><img src="images/research/vortex-model-compact.png" width="45%"></a>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<a style= "border-bottom-color: transparent;" href="images/research/vortex-model-elongated.png"><img src="images/research/vortex-model-elongated.png" width="44%"></a></p>
 						</center>
 						<p element style="margin-top:-30px"><center><font face="Arial" size=2.8>
-				          <i>
-				          <strong>Left:</strong> Beam diameter = 0.5 a.
-				          <strong>Middle:</strong> Beam diameter = 1.0 a.
-				          <strong>Right:</strong> Beam diameter = 1.5 a.
+				          <i> Vortex models (<a href="https://ui.adsabs.harvard.edu/abs/2015A%26A...579A.100S/abstract">Surville + Barge 2015</a>).
+				          <strong>Left:</strong> Compact (min[Ro] < -0.15).
+				          <strong>Right:</strong> Elongated (min[Ro] > -0.15).
 				          </i>
 				        </font></center></p>
 
